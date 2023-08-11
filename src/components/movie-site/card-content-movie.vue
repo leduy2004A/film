@@ -38,8 +38,10 @@ export default {
         top: 0,
         behavior: "smooth" // Tạo hiệu ứng cuộn mượt
       });
-            this.$store.dispatch('filmchung/getDetaiMovie',idmovie)
-            this.$store.dispatch('similarfilm/getSimilarFilm',idmovie)
+        this.$store.dispatch("filmchung/getDetaiMovie",idmovie);
+        this.$store.dispatch("casts/getActor",idmovie);
+        this.$store.dispatch("videomovie/getVideo",idmovie);
+        this.$store.dispatch("similarfilm/getSimilarFilm",idmovie);
              let loader = this.$loading.show({
                     // Optional parameters
                     container: this.fullPage ? null : this.$refs.formContainer,
