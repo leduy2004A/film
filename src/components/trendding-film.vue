@@ -8,22 +8,22 @@
     :slidesPerView="1"
     :spaceBetween="10"
     :breakpoints="{
-      '@0.00': {
-        slidesPerView: 1,
-        spaceBetween: 20,
+      450:{
+            slidesPerView: 1,
+            spaceBetween: 20,
       },
-      '@0.75': {
-        slidesPerView: 2,
-        spaceBetween: 180,
-      },
-      '@1.00': {
-        slidesPerView: 3,
-        spaceBetween: 200,
-      },
-      '@1.50': {
-        slidesPerView: 4,
-        spaceBetween: 100,
-      },
+      640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 100,
+          },
     }"
     :modules="modules"
     class="mySwiper"

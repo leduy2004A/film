@@ -2,9 +2,9 @@
 
   <div class="image-in-movie">
     <div class="image-insight">
-        <img :src="'https://image.tmdb.org/t/p/original/'+results.backdrop_path" alt="" class="banner-film">
+        <img :src="'https://image.tmdb.org/t/p/original/'+results.poster_path" alt="" class="banner-film">
         <div class="image-in-banner">
-            <img :src="'https://image.tmdb.org/t/p/original/'+results.poster_path" alt="" class="image-main-film">
+            <img :src="'https://image.tmdb.org/t/p/original/'+results.backdrop_path" alt="" class="image-main-film">
         </div>
     </div>
     <div class="title-detail-film">
@@ -24,7 +24,7 @@
             <div class="casts-human">
                 <v-container fluid="true" class="px-0">
                     <v-row justify="start">
-                        <v-col cols="3" v-for="item in getCasts()" :key="item">
+                        <v-col cols="12" v-for="item in getCasts()" :key="item" sm="3">
                             <v-sheet>
                                 <div class="image-casts">
                                     <img :src="'https://image.tmdb.org/t/p/original/'+ item.profile_path" alt="" class="img-casts">
@@ -145,6 +145,7 @@ export default {
     width: 100%;
     height: 602px;
     opacity: 0.3;
+    
 }
 .image-in-banner{
     width: 50%;

@@ -2,7 +2,7 @@
   <div class="card-movie">
     <v-container fluid="true" class="px-0">
         <v-row justify="start">
-            <v-col cols="3" v-for="item in allfilm" :key="item.id">
+            <v-col cols="12" v-for="item in allfilm" :key="item.id" sm="3">
                 <v-sheet>
                     
                 <card-content-movie :item="item"></card-content-movie>
