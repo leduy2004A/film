@@ -1,8 +1,8 @@
 <template>
   <div class="main-film">
-    <header>
+    <!-- <header>
         <header-film></header-film>
-    </header>
+    </header> -->
     <nav>
         <navbar-film></navbar-film>
     </nav>
@@ -14,11 +14,11 @@
 
 <script>
 import contentFilm from './content-film.vue'
-import headerFilm from './header-film.vue'
+// import headerFilm from './header-film.vue'
 import navbarFilm from './navbar-film.vue'
 export default {
     components:{
-        headerFilm,
+        // headerFilm,
         navbarFilm,
         contentFilm
     },
@@ -38,7 +38,7 @@ export default {
                 setTimeout(() => {
                     loader.hide()
             
-               }, 5000)
+               }, 1500)
     }
 }
 </script>

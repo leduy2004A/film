@@ -7,7 +7,7 @@
     </div>
     </header>
    <main>
-    <card-movie></card-movie>
+    <card-movie :page="page"></card-movie>
    </main>
     
   </div>
@@ -16,6 +16,14 @@
 <script>
 import cardMovie from './card-movie.vue'
 export default {
+    props:{
+        page:{
+            type:Number
+        }
+    },
+    created(){
+        console.log("Nè"+this.page)
+    },
     components:{
         cardMovie
     }

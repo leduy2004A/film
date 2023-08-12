@@ -18,11 +18,20 @@ import cardContentMovie from './card-content-movie.vue'
 import {useStore,createNamespacedHelpers} from 'vuex'
 const {mapState} = createNamespacedHelpers('allfilm')
 export default {
-    setup(){
-        const store = useStore();
-        let page = 1;
-        store.dispatch('allfilm/getallfilm',page)
+    props:{
+        page:{
+            type:Number
+        }
     },
+    created(){
+        
+        const store = useStore();
+        let giay = this.page
+        store.dispatch('allfilm/getallfilm',giay)
+    },
+    // created(){
+    //     console.log(this.page)
+    // },
     components:{
         cardContentMovie
     },
