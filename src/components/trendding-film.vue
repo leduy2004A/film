@@ -17,8 +17,23 @@
             spaceBetween: 20,
           },
           768: {
+            slidesPerView: 3,
+            spaceBetween: -80,
+          },
+          820:{
+            slidesPerView: 3,
+            spaceBetween: -10,
+          },
+          414:{
             slidesPerView: 2,
-            spaceBetween: 5,
+          },
+          393:{
+            slidesPerView: 2,
+            spaceBetween:40
+          },
+          450:{
+             slidesPerView: 2,
+            spaceBetween:-18
           },
           1024: {
             slidesPerView: 4,
@@ -148,4 +163,22 @@ p{
 .btn-watch{
     opacity: 0.9;
 }
+@media only screen and (max-width: 46.1875em)
+{
+  .image-size{
+        width: 200px;
+      }
+      .film-trend{
+        width: 200px;
+      }
+}
+@media only screen and (min-width:46.25em) and (max-width: 69.9375em)
+    {
+      .image-size{
+        width: 200px;
+      }
+      .film-trend{
+        width: 200px;
+      }
+    }
 </style>

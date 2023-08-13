@@ -8,11 +8,14 @@
             <p>TV Shows</p>
         </div>
         <v-spacer></v-spacer>
-        <div class="icon-header mr-4">
+        <v-row class="justify-end">
+           <div class="icon-header mr-4">
             <v-icon>mdi-wifi</v-icon>
             <v-icon class="mx-8">mdi-bell</v-icon>
             <v-icon>mdi-menu</v-icon>
         </div>
+        </v-row>
+       
     </v-app-bar>
   </div>
 </template>

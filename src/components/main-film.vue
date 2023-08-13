@@ -1,8 +1,9 @@
 <template>
   <div class="main-film">
-    <!-- <header>
-        <header-film></header-film>
-    </header> -->
+         <div class="anhien">
+        <header-film ></header-film>
+    </div>
+   
     <nav>
         <navbar-film></navbar-film>
     </nav>
@@ -14,11 +15,11 @@
 
 <script>
 import contentFilm from './content-film.vue'
-// import headerFilm from './header-film.vue'
+import headerFilm from './header-film.vue'
 import navbarFilm from './navbar-film.vue'
 export default {
     components:{
-        // headerFilm,
+        headerFilm,
         navbarFilm,
         contentFilm
     },
@@ -43,6 +44,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    @media only screen and (min-width:46.25em) and (max-width: 69.9375em)
+    {
+        .anhien{
+            display: block;
+        }
+    }
 </style>

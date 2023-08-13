@@ -6,7 +6,7 @@
         </p>
     <v-container class="bg-black px-0" fluid="true">
         <v-row justify="start" class="bg-black">
-            <v-col cols="12" v-for="item in film.results" :key="item.id" class="bg-black" sm="4">
+            <v-col cols="6" v-for="item in film.results" :key="item.id" class="bg-black"  md="4" >
                 <v-sheet>
             <div class="film-trend w-100 bg-black">
                   <img :src="'https://image.tmdb.org/t/p/original/'+item.poster_path" alt="" class="image image-size w-100">
