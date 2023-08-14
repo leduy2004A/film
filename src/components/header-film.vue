@@ -37,6 +37,7 @@ export default {
       }
       .icon-header{
         margin-right: 20px;
+        display: none;
       }
 }
 @media only screen and (min-width:46.25em) and (max-width: 69.9375em)

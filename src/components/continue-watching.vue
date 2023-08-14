@@ -28,6 +28,14 @@
             slidesPerView: 2,
             spaceBetween: 30,
           },
+           375:{
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          350:{
+            slidesPerView: 2,
+            spaceBetween: 90,
+          },
           393:{
             slidesPerView: 2,
             spaceBetween:40
