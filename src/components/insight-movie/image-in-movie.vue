@@ -219,4 +219,20 @@ li{
 .movie-card{
     width: 100%;
 }
+@media only screen and (max-width: 46.1875em)
+{
+.title-detail-film{
+        font-size: 10px;
+    }
+    li{
+        margin-right:5px ;
+        width: 80px;
+    }
+   
+    
+}
+@media only screen and (min-width:46.25em) and (max-width: 69.9375em)
+    {
+        
+    }
 </style>
