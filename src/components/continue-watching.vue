@@ -26,6 +26,7 @@
           },
           414:{
             slidesPerView: 2,
+            spaceBetween: 30,
           },
           393:{
             slidesPerView: 2,
@@ -34,6 +35,10 @@
           450:{
              slidesPerView: 2,
             spaceBetween:-18
+          },
+           750:{
+            slidesPerView: 3,
+            spaceBetween: -80,
           },
           1024: {
             slidesPerView: 4,
@@ -107,7 +112,7 @@ export default {
                 // simulate AJAX
                 setTimeout(() => {
                     loader.hide()
-                this.$router.push('/detail-movie');
+                this.$router.push(`/detail-movie/${idmovie}`);
                }, 2000)
         }
     }

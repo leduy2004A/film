@@ -17,3 +17,6 @@ export const nowFilm = () =>{
 export const getallfilm = (page) =>{
     return axiosApi.get(`movie/popular?page=${page}`)
 }
+export const searchfilm = (query) => {
+    return axiosApi.get(`search/movie?query=${query}`)
+}

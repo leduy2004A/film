@@ -13,14 +13,14 @@ const routes = [
         component:mainMovie
     },
     {
-        path:'/detail-movie',
+        path:'/detail-movie/:id',
         component:detailMovie
     },
     {
         path:'/',
         component:movePage
-    }
-
+    },
+ 
 ]
 const router = createRouter({
     history:createWebHistory(),

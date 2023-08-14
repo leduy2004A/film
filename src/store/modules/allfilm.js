@@ -1,5 +1,4 @@
-import {getallfilm} from '@/apis/film'
-
+import {getallfilm,searchfilm} from '@/apis/film'
 const state = ()=>{
     return {
         allfilm: [
@@ -42,6 +41,12 @@ const actions = {
    async getallfilm(context,payload){
         const data = await getallfilm(payload);
         context.commit('getallfilmmutations',data)
+    },
+    async searchfilm(context,payload)
+    {
+        const data = await searchfilm(payload);
+        context.commit('getallfilmmutations',data);
+        
     }
 }
 export default {

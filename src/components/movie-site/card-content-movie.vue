@@ -56,7 +56,7 @@ export default {
                 // simulate AJAX
                 setTimeout(() => {
                     loader.hide()
-                this.$router.push('/detail-movie');
+                this.$router.push(`/detail-movie/${idmovie}`);
                }, 2000)
         }
     }

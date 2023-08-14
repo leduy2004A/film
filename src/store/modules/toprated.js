@@ -34,7 +34,7 @@ const mutations = {
     gettopratedMutations(state,payload)
     {
         state.topfilm = payload
-        console.log(state.topfilm)
+
     }
 }
 const actions = {

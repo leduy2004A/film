@@ -2,8 +2,8 @@
   <div class="content-movie">
     <header>
          <div class="search-film d-flex align-center mb-12">
-        <input type="text" class="border" placeholder="Nhập phim muốn xem">
-        <v-btn text="Tìm kiếm" class="search-btn"></v-btn>
+        <input type="text" class="border" placeholder="Nhập phim muốn xem" v-model="textsearch">
+        <v-btn text="Tìm kiếm" class="search-btn" @click="searchfilm(textsearch)"></v-btn>
     </div>
     </header>
    <main>
@@ -16,6 +16,11 @@
 <script>
 import cardMovie from './card-movie.vue'
 export default {
+    data(){
+        return {
+            textsearch:""
+        }
+    },
     props:{
         page:{
             type:Number
@@ -26,6 +31,27 @@ export default {
     },
     components:{
         cardMovie
+    },
+    methods:{
+        searchfilm(textsearch){
+            let loader = this.$loading.show({
+                    // Optional parameters
+                    container: this.fullPage ? null : this.$refs.formContainer,
+                    canCancel: true,
+                    loader:'dots',
+                    backgroundColor: 'black',
+                    width: 100,
+                    height: 100,
+                    onCancel: this.onCancel,
+                    color:'#CB4440'
+                });
+                // simulate AJAX
+                setTimeout(() => {
+                    loader.hide()
+               this.$store.dispatch("allfilm/searchfilm",textsearch)
+               }, 1000)
+            
+        }
     }
 }
 </script>

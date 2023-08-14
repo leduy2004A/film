@@ -24,7 +24,7 @@
             <div class="casts-human">
                 <v-container fluid="true" class="px-0">
                     <v-row justify="start">
-                        <v-col cols="12" v-for="item in getCasts()" :key="item" sm="3">
+                        <v-col cols="6" v-for="item in getCasts()" :key="item" sm="3">
                             <v-sheet>
                                 <div class="image-casts">
                                     <img :src="'https://image.tmdb.org/t/p/original/'+ item.profile_path" alt="" class="img-casts">
@@ -102,8 +102,13 @@ export default {
         // console.log(this.getCasts());
         // const datamovie = this.video.results.key;
         // console.log(datamovie)
-        console.log(this.getVideo());
-        console.log(this.getCasts())
+        // console.log(this.getVideo());
+        // console.log(this.getCasts());
+        // this.$store.dispatch("filmchung/getDetaiMovie",this.$route.params.id);
+        // this.$store.dispatch("casts/getActor",this.$route.params.id);
+        // this.$store.dispatch("videomovie/getVideo",this.$route.params.id);
+        // this.$store.dispatch("similarfilm/getSimilarFilm",this.$route.params.id);
+    
     },
     computed:{
         ...filmchung({

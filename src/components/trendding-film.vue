@@ -20,12 +20,17 @@
             slidesPerView: 3,
             spaceBetween: -80,
           },
+          750:{
+            slidesPerView: 3,
+            spaceBetween: -80,
+          },
           820:{
             slidesPerView: 3,
             spaceBetween: -10,
           },
           414:{
             slidesPerView: 2,
+            spaceBetween: 30,
           },
           393:{
             slidesPerView: 2,
@@ -104,7 +109,7 @@ export default {
         this.$store.dispatch("filmchung/getDetaiMovie",idmovie);
         this.$store.dispatch("casts/getActor",idmovie);
         this.$store.dispatch("videomovie/getVideo",idmovie);
-        this.$store.dispatch("similarfilm/getSimilarFilm",idmovie);
+        this.$store.dispatch("similarfilm/getSimilarFilm",idmovie) ;
          let loader = this.$loading.show({
                     // Optional parameters
                     container: this.fullPage ? null : this.$refs.formContainer,
@@ -119,7 +124,8 @@ export default {
                 // simulate AJAX
                 setTimeout(() => {
                     loader.hide()
-                this.$router.push('/detail-movie');
+                this.$router.push(`/detail-movie/${idmovie}`);
+        
                }, 2000)
     }
   }
