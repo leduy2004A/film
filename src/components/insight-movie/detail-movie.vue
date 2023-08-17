@@ -37,13 +37,13 @@ components:{
 @media only screen and (max-width: 46.1875em)
 {
   .detail-movie{
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }
 @media only screen and (min-width:46.25em) and (max-width: 69.9375em)
     {
      .detail-movie{
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
     }
 </style>
