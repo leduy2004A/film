@@ -104,4 +104,14 @@ export default {
         width: 90%;
         bottom:20%;
     }
+    @media only screen and (max-width: 46.1875em)
+{
+  p{
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width:46.25em) and (max-width: 69.9375em)
+    {
+     
+    }
 </style>

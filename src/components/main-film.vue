@@ -61,4 +61,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.main-film{
+  overflow-x: hidden;
+}
+</style>

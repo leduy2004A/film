@@ -8,11 +8,13 @@
     </main>
     <footer>
          <v-pagination
+         class="pagination"
         v-model="duy"
         :length="300"
         rounded="circle"
         color="white"
         total-visible="5"
+        size="40"
         @click="chuyentrang(duy)"
     ></v-pagination>
     </footer>
@@ -87,6 +89,7 @@ export default {
   .main-movie{
     overflow-x:hidden ;
   }
+  
 }
 @media only screen and (min-width:46.25em) and (max-width: 69.9375em)
     {
