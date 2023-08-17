@@ -20,21 +20,7 @@ components:{
     headerFilm,
     imageInMovie
 },
-  created()
-    {
-        // const datacasts = this.actor
-        // console.log(datacasts);
-        // console.log(this.getCasts());
-        // const datamovie = this.video.results.key;
-        // console.log(datamovie)
-        // console.log(this.getVideo());
-        // console.log(this.getCasts());
-        this.$store.dispatch("filmchung/getDetaiMovie",this.$route.params.id);
-        this.$store.dispatch("casts/getActor",this.$route.params.id);
-        this.$store.dispatch("videomovie/getVideo",this.$route.params.id);
-        this.$store.dispatch("similarfilm/getSimilarFilm",this.$route.params.id);
-    
-    },
+
 }
 </script>
 
@@ -48,4 +34,16 @@ components:{
   min-height: 500px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 46.1875em)
+{
+  .detail-movie{
+    overflow-y: hidden;
+  }
+}
+@media only screen and (min-width:46.25em) and (max-width: 69.9375em)
+    {
+     .detail-movie{
+    overflow-y: hidden;
+  }
+    }
 </style>

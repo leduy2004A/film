@@ -82,4 +82,16 @@ export default {
     background-color: #0F172A;
     height: 100%;
 }
+@media only screen and (max-width: 46.1875em)
+{
+  .main-movie{
+    overflow-x:hidden ;
+  }
+}
+@media only screen and (min-width:46.25em) and (max-width: 69.9375em)
+    {
+     .main-movie{
+    overflow-x:hidden ;
+  }
+    }
 </style>
